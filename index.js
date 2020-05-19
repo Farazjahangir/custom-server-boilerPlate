@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const path = require("path");
 
+const globalHelpers = require("./src/utils/globalHelpers");
+
 require("dotenv").config({ path: path.join(__dirname, "dev.env") });
 
 require("./src/config/db");
